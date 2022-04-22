@@ -1,0 +1,94 @@
+body {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 650px;
+  margin: 32px auto;
+  padding: 8px;
+}
+
+.storeBox {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 24px auto;
+}
+
+.blockRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockRow > * {
+  padding: 12px 18px;
+}
+
+#bookStoreImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#blockMain {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+}
+
+#blockMain > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+#storeName {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+table,
+tr > td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  border-spacing: 10px;
+}
+
+table {
+  table-layout: fixed;
+}
+
+thead {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+th {
+  padding: 5px;
+  text-align: start;
+}
+
+td {
+  padding: 5px;
+}
+
+td:first-child {
+  width: 60%;
+}
+
+.flag {
+  height: 18px;
+  object-fit: contain;
+}
+
+@media (max-width: 650px) {
+  .blockRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bookStoreImageParent {
+    display: flex;
+  }
+}
